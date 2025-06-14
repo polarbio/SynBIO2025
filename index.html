@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño de Circuitos Biológicos - Aprende de forma visual e interactiva</title>
+    <meta name="description" content="Plataforma educativa moderna para aprender diseño de circuitos biológicos con contenido interactivo y visualizaciones">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23667eea' stroke-width='2'><path d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z'/></svg>">
+</head>
+<body class="bg-gradient-to-br from-slate-50 via-blue-50 to-purple-50 min-h-screen">
+    <!-- Navegación -->
+    <nav class="fixed top-0 w-full z-50 glass-effect">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gradient-to-r from-purple-600 to-blue-600 rounded-xl flex items-center justify-center">
+                        <i data-lucide="dna" class="w-6 h-6 text-white"></i>
+                    </div>
+                    <h1 class="text-xl font-semibold text-gray-900">BioCuitos</h1>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#chapters" class="text-gray-700 hover:text-purple-600 transition-colors">Capítulos</a>
+                    <a href="#appendices" class="text-gray-700 hover:text-purple-600 transition-colors">Apéndices</a>
+                    <a href="https://github.com/tu-usuario/tu-repo" target="_blank" class="text-gray-700 hover:text-purple-600 transition-colors flex items-center">
+                        <i data-lucide="github" class="w-4 h-4 mr-1"></i>
+                        GitHub
+                    </a>
+                    <button id="darkModeToggle" class="p-2 rounded-lg hover:bg-white/20 transition-colors">
+                        <i data-lucide="moon" class="w-5 h-5"></i>
+                    </button>
+                </div>
+                
+                <button id="mobileMenuToggle" class="md:hidden p-2 rounded-lg hover:bg-white/20">
+                    <i data-lucide="menu" class="w-6 h-6"></i>
+                </button>
+            </div>
+            
+            <!-- Menú móvil -->
+            <div id="mobileMenu" class="md:hidden hidden py-4 border-t border-white/20">
+                <div class="space-y-2">
+                    <a href="#chapters" class="block px-3 py-2 text-gray-700 hover:text-purple-600 transition-colors">Capítulos</a>
+                    <a href="#appendices" class="block px-3 py-2 text-gray-700 hover:text-purple-600 transition-colors">Apéndices</a>
+                    <a href="https://github.com/tu-usuario/tu-repo" target="_blank" class="block px-3 py-2 text-gray-700 hover:text-purple-600 transition-colors">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-20 pb-16 relative overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="floating-animation absolute top-20 left-20 w-32 h-32 bg-white/10 rounded-full blur-xl"></div>
+            <div class="floating-delay absolute bottom-20 right-20 w-40 h-40 bg-white/10 rounded-full blur-xl"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <div class="mb-8">
+                    <div class="inline-flex items-center px-4 py-2 bg-white/20 rounded-full text-white/90 text-sm font-medium mb-6">
+                        <i data-lucide="sparkles" class="w-4 h-4 mr-2"></i>
+                        Aprende diseño de circuitos biológicos de forma visual
+                    </div>
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                    Diseño de 
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-pink-300">
+                        Circuitos
+                    </span>
+                    <br>Biológicos
+                </h1>
+                
+                <p class="text-xl text-white/80 max-w-3xl mx-auto mb-8 leading-relaxed">
+                    Descubre los principios fundamentales del diseño de circuitos biológicos a través de contenido interactivo, 
+                    visualizaciones modernas y ejemplos prácticos que harán que el aprendizaje sea memorable.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mb-12">
+                    <button id="startLearning" class="px-8 py-4 bg-white text-purple-600 rounded-xl font-semibold hover:bg-gray-50 transition-all transform hover:scale-105 shadow-lg">
+                        <i data-lucide="play-circle" class="w-5 h-5 inline mr-2"></i>
+                        Comenzar Ahora
+                    </button>
+                    <a href="https://biocircuits.github.io/" target="_blank" class="px-8 py-4 bg-white/20 text-white rounded-xl font-semibold hover:bg-white/30 transition-all border border-white/30">
+                        <i data-lucide="book-open" class="w-5 h-5 inline mr-2"></i>
+                        Ver Original
+                    </a>
+                </div>
+                
+                <div class="grid grid-cols-3 gap-8 max-w-md mx-auto text-white/80">
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-white" id="chaptersCount">22</div>
+                        <div class="text-sm">Capítulos</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-white" id="appendicesCount">15+</div>
+                        <div class="text-sm">Apéndices</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-2xl font-bold text-white">100%</div>
+                        <div class="text-sm">Gratuito</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Barra de Búsqueda y Filtros -->
+    <section class="py-8 bg-white/80 backdrop-blur-sm border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center justify-between space-y-4 lg:space-y-0 lg:space-x-6">
+                <div class="relative w-full lg:w-96">
+                    <i data-lucide="search" class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400"></i>
+                    <input 
+                        type="text" 
+                        id="searchInput"
+                        placeholder="Buscar capítulos, temas, conceptos..." 
+                        class="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all search-focus"
+                    >
+                </div>
+                
+                <div class="flex flex-wrap items-center space-x-2">
+                    <span class="text-gray-600 font-medium mr-3">Filtrar por:</span>
+                    <button class="category-filter active px-4 py-2 rounded-lg text-sm font-medium transition-all" data-category="all">
+                        Todos
+                    </button>
+                    <button class="category-filter px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium hover:bg-gray-200 transition-all" data-category="basics">
+                        Básicos
+                    </button>
+                    <button class="category-filter px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium hover:bg-gray-200 transition-all" data-category="advanced">
+                        Avanzados
+                    </button>
+                    <button class="category-filter px-4 py-2 bg-gray-100 rounded-lg text-sm font-medium hover:bg-gray-200 transition-all" data-category="technical">
+                        Técnicos
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" class="fixed inset-0 bg-white/80 backdrop-blur-sm z-50 flex items-center justify-center">
+        <div class="animate-spin rounded-full h-32 w-32 border-b-2 border-purple-600"></div>
+    </div>
+
+    <!-- Sección de Capítulos -->
+    <section id="chapters" class="py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Capítulos Principales
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Explora los conceptos fundamentales del diseño de circuitos biológicos a través de nuestros capítulos interactivos
+                </p>
+            </div>
+            
+            <div id="chaptersGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Los capítulos se cargarán dinámicamente -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Apéndices Técnicos -->
+    <section id="appendices" class="py-16 bg-gradient-to-r from-gray-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Apéndices Técnicos
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Profundiza en los aspectos técnicos con herramientas y métodos avanzados
+                </p>
+            </div>
+            
+            <div id="appendicesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Los apéndices se cargarán dinámicamente -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-r from-purple-600 to-blue-600 rounded-xl flex items-center justify-center">
+                            <i data-lucide="dna" class="w-6 h-6 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">BioCuitos</h3>
+                    </div>
+                    <p class="text-gray-300 mb-4">
+                        Plataforma educativa moderna para el diseño de circuitos biológicos
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://github.com/tu-usuario/tu-repo" target="_blank" class="text-gray-300 hover:text-white transition-colors">
+                            <i data-lucide="github" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://biocircuits.github.io/" target="_blank" class="text-gray-300 hover:text-white transition-colors">
+                            <i data-lucide="external-link" class="w-5 h-5"></i>
+                        </a>
+                        <a href="mailto:contacto@biocuitos.com" class="text-gray-300 hover:text-white transition-colors">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contenido</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#chapters" class="hover:text-white transition-colors">Capítulos</a></li>
+                        <li><a href="#appendices" class="hover:text-white transition-colors">Apéndices Técnicos</a></li>
+                        <li><a href="https://biocircuits.github.io/" target="_blank" class="hover:text-white transition-colors">Sitio Original</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Recursos</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="https://github.com/tu-usuario/tu-repo/issues" target="_blank" class="hover:text-white transition-colors">Reportar Error</a></li>
+                        <li><a href="https://github.com/tu-usuario/tu-repo" target="_blank" class="hover:text-white transition-colors">Contribuir</a></li>
+                        <li><a href="https://github.com/tu-usuario/tu-repo/wiki" target="_blank" class="hover:text-white transition-colors">Documentación</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 BioCuitos. Diseñado con ❤️ para la educación científica. | 
+                   <a href="https://biocircuits.github.io/" target="_blank" class="hover:text-white transition-colors">Contenido original</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
