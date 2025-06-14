@@ -1,0 +1,186 @@
+{
+  "chapters": [
+    {
+      "id": 0,
+      "title": "Configurando tu entorno Python",
+      "description": "Aprende a configurar Python para computación científica con las herramientas necesarias",
+      "category": "basics",
+      "icon": "settings",
+      "gradient": "from-green-400 to-blue-500",
+      "progress": 0,
+      "url": "chapters/00_setting_up_python_computing_environment.html",
+      "estimatedTime": "15-20 min",
+      "difficulty": "Principiante"
+    },
+    {
+      "id": 1,
+      "title": "Introducción al diseño de circuitos",
+      "description": "Conceptos fundamentales del diseño de circuitos biológicos y sus aplicaciones",
+      "category": "basics",
+      "icon": "circuit-board",
+      "gradient": "from-purple-400 to-pink-500",
+      "progress": 0,
+      "url": "chapters/01_intro_to_circuit_design.html",
+      "estimatedTime": "20-25 min",
+      "difficulty": "Principiante"
+    },
+    {
+      "id": 2,
+      "title": "Principios de expresión génica",
+      "description": "Factores que gobiernan la velocidad de expresión génica en células",
+      "category": "basics",
+      "icon": "dna",
+      "gradient": "from-blue-400 to-purple-500",
+      "progress": 0,
+      "url": "chapters/02_response_time.html",
+      "estimatedTime": "25-30 min",
+      "difficulty": "Intermedio"
+    },
+    {
+      "id": 3,
+      "title": "Interruptores pegajosos",
+      "description": "Biestabilidad a través de retroalimentación positiva en sistemas biológicos",
+      "category": "advanced",
+      "icon": "toggle-left",
+      "gradient": "from-red-400 to-orange-500",
+      "progress": 0,
+      "url": "chapters/03_bistability.html",
+      "estimatedTime": "30-35 min",
+      "difficulty": "Avanzado"
+    },
+    {
+      "id": 4,
+      "title": "Análisis de bucles feedforward",
+      "description": "Comprende los circuitos de alimentación hacia adelante y su comportamiento",
+      "category": "advanced",
+      "icon": "arrow-right-circle",
+      "gradient": "from-teal-400 to-green-500",
+      "progress": 0,
+      "url": "chapters/04_ffls.html",
+      "estimatedTime": "25-30 min",
+      "difficulty": "Avanzado"
+    },
+    {
+      "id": 5,
+      "title": "Compensación de dosis",
+      "description": "Bucles feedforward incoherentes sirven como compensadores de dosis",
+      "category": "advanced",
+      "icon": "balance-scale",
+      "gradient": "from-indigo-400 to-blue-500",
+      "progress": 0,
+      "url": "chapters/05_dosage_compensation.html",
+      "estimatedTime": "20-25 min",
+      "difficulty": "Avanzado"
+    },
+    {
+      "id": 6,
+      "title": "Adaptación exacta en quimiotaxis",
+      "description": "Mecanismos de adaptación perfecta en la vía de quimiotaxis bacteriana",
+      "category": "advanced",
+      "icon": "target",
+      "gradient": "from-pink-400 to-red-500",
+      "progress": 0,
+      "url": "chapters/06_exact_adaptation.html",
+      "estimatedTime": "30-35 min",
+      "difficulty": "Avanzado"
+    },
+    {
+      "id": 8,
+      "title": "Corrección cinética",
+      "description": "Procesos multi-paso reducen errores en el reconocimiento molecular",
+      "category": "advanced",
+      "icon": "check-circle",
+      "gradient": "from-yellow-400 to-orange-500",
+      "progress": 0,
+      "url": "chapters/08_kinetic_proofreading.html",
+      "estimatedTime": "25-30 min",
+      "difficulty": "Avanzado"
+    },
+    {
+      "id": 9,
+      "title": "Bacterias parpadeantes",
+      "description": "El repressilator habilita oscilaciones autosostenidas en células",
+      "category": "advanced",
+      "icon": "activity",
+      "gradient": "from-purple-400 to-blue-500",
+      "progress": 0,
+      "url": "chapters/09_repressilator.html",
+      "estimatedTime": "35-40 min",
+      "difficulty": "Avanzado"
+    },
+    {
+      "id": 15,
+      "title": "Naturaleza ruidosa de la expresión génica",
+      "description": "Cómo las fluctuaciones estocásticas crean variación en expresión génica",
+      "category": "advanced",
+      "icon": "zap",
+      "gradient": "from-red-400 to-pink-500",
+      "progress": 0,
+      "url": "chapters/15_noise.html",
+      "estimatedTime": "30-35 min",
+      "difficulty": "Avanzado"
+    },
+    {
+      "id": 21,
+      "title": "Patrones de Turing",
+      "description": "Formación de patrones espaciales por mecanismos de reacción-difusión",
+      "category": "advanced",
+      "icon": "hexagon",
+      "gradient": "from-cyan-400 to-blue-500",
+      "progress": 0,
+      "url": "chapters/21_turing.html",
+      "estimatedTime": "40-45 min",
+      "difficulty": "Avanzado"
+    }
+  ],
+  "appendices": [
+    {
+      "title": "Soluciones aproximadas a dinámicas autorrepresivas",
+      "description": "Métodos matemáticos para resolver sistemas autorrepresivos",
+      "category": "technical",
+      "icon": "trending-down",
+      "url": "technical_appendices/02a_approximate_autorepression_dynamics.html",
+      "type": "Matemático"
+    },
+    {
+      "title": "Soluciones numéricas de EDOs con SciPy",
+      "description": "Implementación computacional de ecuaciones diferenciales ordinarias",
+      "category": "technical",
+      "icon": "code",
+      "url": "technical_appendices/02b_numerical_odes.html",
+      "type": "Programación"
+    },
+    {
+      "title": "Gráficos interactivos con Bokeh",
+      "description": "Creación de visualizaciones interactivas para datos científicos",
+      "category": "technical",
+      "icon": "bar-chart",
+      "url": "technical_appendices/02c_interactive_plotting.html",
+      "type": "Visualización"
+    },
+    {
+      "title": "Adimensionalización",
+      "description": "Técnicas para simplificar ecuaciones mediante adimensionalización",
+      "category": "technical",
+      "icon": "minimize",
+      "url": "technical_appendices/03a_nondimensionalization.html",
+      "type": "Matemático"
+    },
+    {
+      "title": "Simulación estocástica (Gillespie)",
+      "description": "Implementación del algoritmo de Gillespie para simulaciones estocásticas",
+      "category": "technical",
+      "icon": "shuffle",
+      "url": "technical_appendices/16a_gillespie.html",
+      "type": "Simulación"
+    },
+    {
+      "title": "Análisis de estabilidad lineal",
+      "description": "Métodos para analizar la estabilidad de puntos fijos en sistemas dinámicos",
+      "category": "technical",
+      "icon": "trending-up",
+      "url": "technical_appendices/09b_linear_stability_analysis.html",
+      "type": "Análisis"
+    }
+  ]
+}
